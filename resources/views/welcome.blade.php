@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Scrapbook</title>
         @vite(['resources/scss/gweb.scss'])
     </head>
     <body class="gweb-site">
