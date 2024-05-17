@@ -1,0 +1,34 @@
+.hero-text-padding {
+	padding-left: calc((100vw - 1920px) / 2 + 300px);
+}
+
+.title::before {
+    content: '// ';
+    font-weight: bold;
+    font-weight: 800;
+
+    margin-left: -55px;
+    position: absolute;
+}
+
+.title {
+    margin-left: 110px;
+    position: relative;
+    box-decoration-break: clone;
+}
+
+.subtitle::before {
+    content: '/ ';
+    font-weight: bold;
+    font-weight: 700;
+
+    margin-left: -55px;
+    position: absolute;
+}
+
+.subtitle {
+    margin-left: 110px;
+    position: relative;
+    box-decoration-break: clone;
+}
+
