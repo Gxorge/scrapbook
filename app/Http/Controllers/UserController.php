@@ -12,7 +12,7 @@ class UserController extends Controller
     public function create(Request $request): RedirectResponse
     {
         $input = $request->validate([
-            'email' => 'required|email|unique:users',
+            'username' => 'required|unique:users',
             'password' => 'required',
             'confirm_password' => 'required'
         ]);
@@ -32,11 +32,11 @@ class UserController extends Controller
 
     public function authenticate(Request $request): RedirectResponse {
         $credentials = $request->validate([
-            'email' => 'required',
+            'username' => 'required',
             'password' => 'required',
         ]);
 
-        $user = User::where('email', '=', $credentials['email'])->first();
+        $user = User::where('username', '=', $credentials['username'])->first();
         if (!$user) {
             return back()->withErrors(['login' => 'Username or password is incorrect'])->withInput();
         }
@@ -47,7 +47,7 @@ class UserController extends Controller
 
         $request->session()->regenerate();
         $request->session()->put('id', $user->uid);
-        return redirect('/dashboard');
+        return redirect('/');
     }
 
     public function logout(Request $request): RedirectResponse {

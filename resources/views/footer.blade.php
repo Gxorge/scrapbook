@@ -5,7 +5,7 @@
             <p style="font-size: 15px;" class="gweb-link-white">
                 <a href="https://github.com/gxorge/scrapbook" target="_blank" rel="noopener">source</a> &middot;
                 <a href="https://github.com/gxorge/" target="_blank" rel="noopener">github</a> &middot;
-                <a href="/login" target="_blank" rel="noopener">login</a>
+                <a href="/auth/login">login</a>
             </p>
         </div>
         <div class="footer-colours">

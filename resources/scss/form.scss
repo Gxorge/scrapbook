@@ -1,0 +1,186 @@
+.form-label::before{
+    content: '/ ';
+    font-size: 17px;
+    font-weight:900;
+}
+
+.form-label {
+    padding-left: 70px;
+}
+
+.form input, .form textarea, .form-submit {
+    margin-top: 5px;
+    margin-left: 80px;
+}
+
+.form-regular {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #363636;
+}
+
+.form-select {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #363636;
+    background: none;
+    margin-left: 80px;
+}
+
+.form-large {
+    width: 400px;
+    padding: 15px;
+    height: 100px;
+    border: none;
+    border-bottom: 2px solid #363636;
+}
+
+.form-regular:focus, .form-large:focus, .form-select:focus {
+    border-color: #9966cc;
+}
+
+.form-submit {
+    background-color: #363636;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #363636;
+    text-decoration: none;
+}
+
+.form-submit-multi {
+    background-color: #363636;
+    color: white;
+    margin-left: 80px;
+    padding: 10px;
+    width: 100px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #363636;
+    text-decoration: none;
+}
+
+.form-submit:hover, .form-submit-multi:hover {
+    background-color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+}
+
+.form-submit:active, .form-submit-multi:active {
+    background-color: white;
+    color: #363636;
+    border: 1px solid #363636;
+}
+
+.form-error {
+    background-color: red;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-success {
+    background-color: green;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#form-white {
+    color: white;
+}
+
+.form-inline-error {
+    margin-left: 80px;
+    color: red;
+}
+
+.form-inline-error-button {
+    margin-left: 80px;
+    color: red;
+}
+
+.form-noselect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.form-noselect:focus {
+    outline: none !important;
+}
+
+@media(prefers-color-scheme: dark) {
+    .form-regular {
+        width: 400px;
+        padding: 5px;
+        border: none;
+        background-color: #363636;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .form-select {
+        width: 400px;
+        padding: 5px;
+        border: none;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        background: none;
+        margin-left: 80px;
+    }
+
+    .form-large {
+        width: 400px;
+        padding: 15px;
+        height: 100px;
+        border: none;
+        background-color: #363636;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .form-regular:focus, .form-large:focus, .form-select:focus {
+        border-color: #9966cc;
+    }
+
+    .form-submit {
+        background-color: #363636;
+        color: #ffffff;
+        padding: 20px;
+        width: 400px;
+        font-size: 17px;
+        cursor: pointer;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+    }
+
+    .form-submit-multi {
+        background-color: #363636;
+        color: white;
+        margin-left: 80px;
+        padding: 10px;
+        width: 100px;
+        font-size: 17px;
+        cursor: pointer;
+        border: 1px solid #363636;
+        text-decoration: none;
+    }
+
+    .form-submit:hover, .form-submit-multi:hover {
+        background-color: #4a4a4a;
+        border: 1px solid #ffffff;
+    }
+
+    .form-submit:active, .form-submit-multi:active {
+        background-color: white;
+        color: #363636;
+        border: 1px solid #363636;
+    }
+}

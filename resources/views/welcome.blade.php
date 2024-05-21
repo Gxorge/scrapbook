@@ -9,7 +9,7 @@
     </head>
     <body class="gweb-site">
         <main class="gweb-container">
-            @include("hero")
+            @include("hero", ['title' => 'Scrapbook', 'subtitle' => 'Your digital scrapbook'])
             <section class="content gweb-text-layout">
                 <h1>Sup</h1>
             </section>

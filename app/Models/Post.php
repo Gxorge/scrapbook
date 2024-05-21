@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
-class User extends Model
+class Post extends Model
 {
     use HasFactory;
 
@@ -16,14 +15,14 @@ class User extends Model
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'posts';
 
     /**
      * The primary key associated with the table.
      *
      * @var string
      */
-    protected $primaryKey = 'uid';
+    protected $primaryKey = 'pid';
 
     /**
      * Indicates if the model should be timestamped.
@@ -32,15 +31,5 @@ class User extends Model
      */
     public $timestamps = true;
 
-    protected $fillable = ['username', 'password', 'role_rid'];
-
-    public function posts(): HasMany
-    {
-        return $this->hasMany(Post::class);
-    }
-
-    public function role(): HasOne {
-        return $this->hasOne(Role::class);
-    }
 
 }

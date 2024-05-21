@@ -16,7 +16,7 @@ class ReverseUserAuthCheck
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->session()->has('id'))
-            return redirect('dashboard');
+            return redirect('/');
         return $next($request);
     }
 }

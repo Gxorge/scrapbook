@@ -3,10 +3,10 @@
 <header class="hero is-primary ">
     <div class="hero-body hero-text-padding">
         <h1 class="title" style="color: white">
-        Scrapbook
+            {{ $title }}
         </h1>
         <h2 role="doc-subtitle" class="subtitle" style="color: white">
-        Your digital scrapbook
+            {{ $subtitle }}
         </h2>
     </div>
 </header>
